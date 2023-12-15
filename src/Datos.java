@@ -110,5 +110,24 @@ public class Datos {
             this.alias = alias;
         }
 
+    /**
+     * Genera un numero aleatorio entre 1 y 10
+     */
+    public void generarNumeroAleatorio() {
+            setNumAleatorio((int) Math.floor(Math.random() * 10 + 1));
+        }
 
+    /**
+     * Comparar numero del usuario y aleatorio
+     * @param numUsuario numero introducido por el jugador
+     * @return si son iguales
+     */
+    public boolean compararNumero(int numUsuario) {
+            if(numAleatorio == numUsuario) {
+                return true;
+            } else if(numAleatorio != numUsuario) {
+                return false;
+            }
+            return false;
+        }
     }

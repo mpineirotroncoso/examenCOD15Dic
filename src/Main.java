@@ -1,6 +1,13 @@
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
-        new Juego();
+    /**
+     * Llamamos a la clase juego para iniciarlo
+     * @author Marcos
+     * @version 1
+     * @param args
+     *
+     */
+    public static void main (String[] args) {
+        Juego juego = new Juego();
+        juego.IniciarJuego();
     }
 }
